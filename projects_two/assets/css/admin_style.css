@@ -5,12 +5,42 @@
     padding: 0px;
 }
 
-body {
-    background: #F1F0F3;
-}
+body{
+background:#32526E;	
+	}
 
 .header p {
     text-align: center;
     font-size: 40pt;
     font-weight: bold;
+	float:center;
+	color:#4195ED;
+}
+
+.main{
+   width:100%;
+   
+	}
+.main_container{
+   width:90%;
+   height:auto;
+   margin:auto;	
+	}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	background:#4195ED;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+	
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }

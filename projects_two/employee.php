@@ -1,17 +1,37 @@
 <?php
+date_default_timezone_set("Asia/Dhaka");
 session_start();
+
 include 'db.php';
-$user_id=$_SESSION['e_id'];
+include 'assets/support_files/employee_action.php';
+if(isset($_SESSION['e_id']))
+{
+	$user_id=$_SESSION['e_id'];
+}
+else
+{
+	header ("Location:employee_log_in.php");
+}
+
+$office_start_time=date('10:0:0a');
 $sql="select * from employee where e_id='$user_id'";
 $result=mysqli_query($con,$sql);
-
 while($row=mysqli_fetch_assoc($result))
 {
 	
-	$user_name=$row['name'];
+	 $user_name=$row['name'];
+	//after log in  code starts here//	        	  
+	 $late=late_calculation();  
+	 $e_id=$row['e_id'];
+	 insert($user_name,$user_id,$late,$con);
     
 }
-
+if(isset($_POST['submit']))
+{
+	
+	setlog_out_time($con,$user_id);
+  	header ("Location:employee_log_in.php");
+}
 ?>
     <!doctype html>
     <html>
@@ -20,6 +40,7 @@ while($row=mysqli_fetch_assoc($result))
         <meta charset="utf-8">
         <title>Employee</title>
         <link href="assets/css/employee_style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="assets/images/icone.png">
     </head>
 
     <body>
@@ -29,7 +50,9 @@ while($row=mysqli_fetch_assoc($result))
                 <div class="user_info">
                 <h2>Welcome <?php echo $user_name;?></h2>
                    
-                <a href="index.php"><h3>Log Out</h3></a>
+                <form method="post" action="">
+                 <input type="submit" value="Log out" name="submit">
+                </form>
                 </div>
                 <div class="user_attendance">
                 <h2>Attendance sheet</h2>
@@ -38,43 +61,17 @@ while($row=mysqli_fetch_assoc($result))
     <th>Date</th>
     <th>Logged in time</th>
     <th>logged out time</th>
-    <th>Late</th>
+    <th>Late(Minutes)</th>
     <th>Status</th>
   </tr>
-  <tr>
-    <td>1-8-2018</td>
-    <td>9am</td>
-    <td>4pm</td>
-    <td>2hour</td>
-    <td>Present</td>
-  </tr>
-  <tr>
-    <td>2-8-2018</td>
-    <td>Null</td>
-    <td>Null</td>
-    <td>Null</td>
-    <td>Absent</td>
-  </tr>  
- <tr>
-    <td>3-8-2018</td>
-    <td>9am</td>
-    <td>4pm</td>
-    <td>2hour</td>
-    <td>Present</td>
-  </tr>
+  <?php  show_employee($user_id,$con);?>
+ 
  
 </table>
 
     <table id="customers">
-  <tr>
-    <th>Total Working days : 25</th>
-    <th>Present : 20 days</th>
-    <th>Absent : 4 dayes</th>
-    <th>Late : 10 hours</th>
-  </tr>
- 
- 
-</table>
+    <?php echo attendance_result($con,$user_id); ?>
+   </table>
                 </div>
             </div>
         </div>
