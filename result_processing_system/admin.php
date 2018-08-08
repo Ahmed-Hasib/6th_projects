@@ -54,6 +54,7 @@ include 'assets/support_files/admin_action.php';
        <div class="right_side">
        <table>
   <tr>
+    <th>Action</th>
     <th>Name</th>
     <th>Roll</th>
     <th>Dpt</th>

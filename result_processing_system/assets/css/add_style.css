@@ -1,11 +1,10 @@
 /* CSS Document */
-
 *{
  margin:0px;
  padding:0px;	
 	}
 body{
-   background:#27363B;	
+   background:#27363B;
 	}
 .header{
     width:100%;
@@ -29,29 +28,24 @@ body{
 	text-align:center;
 	font-size:30pt;
 	}
-.student_info{
-   width:100%;
-   height:50px;
-   	
+.main{
+    width:100%;
+	height:400px;
+		
 	}
-.student_info_container{
-    width:70%;
-	height:50px;
+.main_container{
+    width:400px;
+	height:250px;
 	margin:auto;
+	background:;	
+	margin-left:39%;
+	text-align:center;
 	}
-.student_info_container  p{
-   float:left;
-   margin-right:3%;
-   font-size:15pt;
-   color:#EB4960;
+
+.main_container h2{
+   color:hsla(334,100%,45%,1.00);	
 	}
-.subject_add{
-   width:70%;	
-   margin:auto;
-	}
-.subject_add h3{
-    color:#C40275;	
-	}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -108,30 +102,3 @@ tr td a{
 	background:white;
 	color:black;
 	}
-button:hover{
-    
-	cursor:pointer;
-	background:#EB4960;
-	}
-button:active{
-	cursor:pointer;
-	font-size:12pt;
-	background:white;
-	color:black;
-	}
-.hid{
-  display:none;	
-	}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color:hsla(207,15%,43%,1.00);
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: hsla(207,15%,43%,1.00);
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: hsla(207,15%,43%,1.00);
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: hsla(207,15%,43%,1.00);
-}
-

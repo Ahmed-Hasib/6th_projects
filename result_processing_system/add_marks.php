@@ -5,6 +5,10 @@ include 'assets/support_files/add_mark_action.php';
 if(isset($_POST['submit']))
 {
     $semester=$_POST['semester'];	
+	if($semester==0)
+	{
+	$tmp="No semester selected,pleas get back and choose semester first";	
+	}
 	$_SESSION['semester']=$semester;
 	
     $roll=$_POST['roll'];
@@ -20,8 +24,18 @@ if(isset($_POST['submit']))
 		$_SESSION['name']=$name;
 		$_SESSION['roll']=$roll;
 		$_SESSION['department']=$dpt;
+		$_SESSION['session']=$session;
 		
 	}
+}
+if(isset($_SESSION['semester']) && isset($_SESSION['roll']))
+{
+	
+	    $name=$_SESSION['name'];
+		$roll=$_SESSION['roll'];
+		$dpt=$_SESSION['department'];
+		$session=$_SESSION['session'];
+		$semester=$_SESSION['semester'];
 }
 
 ?>
@@ -38,40 +52,7 @@ if(isset($_POST['submit']))
 <body>
 
 
-<div class="dialog_box">
-   <div class="box_container">
-      <p class="msg">Message</p>
-      <form method="post" action="" class="add_marks_form">
-       <table>
-           <tr>
-              <td>Assignmnet :</td>
-              <td>
-                   <select name="assignment" class="assignment">
-					      <option value="-1">choose</option>
-						  <option value=1>Yes</option>
-						  <option value=0>No</option>
-				 </select>
-              </td>
-           </tr>
-            <tr>
-              <td>Class Test :</td>
-              <td><input type="text" name="class_test" class="class_test"></td>
-           </tr>
-            <tr>
-              <td>Mid Term :</td>
-              <td><input type="text" name="mid_term" class="mid"></td>
-           </tr>
-            <tr>
-              <td>Final :</td>
-              <td><input type="text" name="final" class="final"></td>
-           </tr>
-           <tr>
-             <td colspan="4" ><input type="submit"  value="Submit Marks" class="submit"></td>
-           </tr>
-       </table>
-      </form>
-   </div>
-</div>
+
 <div class="header">
    <div class="header_container">
        <a href="admin.php">Back to Admin</a>
@@ -87,6 +68,7 @@ if(isset($_POST['submit']))
         <p>Semester no: <?php echo $semester;?></p>
     </div>
     <div class="subject_add">
+    <h3><?php  if(isset($tmp)){echo $tmp;}?></h3>
       <table>
   <tr>
     <th>Name</th>

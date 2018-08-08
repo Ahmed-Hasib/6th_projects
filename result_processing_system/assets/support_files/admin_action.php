@@ -7,8 +7,9 @@ function show_student($con){
 	echo '
 <form method="post" action="././add_marks.php">
 <input type="text" name="roll" value='.$row['roll'].'  class="hid">
+ 
   <tr>
-  
+  <td><a href="admin_result.php?id='.$row['roll'].' ">Result</a></td>
     <td>'.$row['name'].'</td>
     <td>'.$row['roll'].'</td>
     <td>'.$row['department'].'</td>
@@ -27,7 +28,7 @@ function show_student($con){
                    <option value="8">8th semester</option>
          </select>
     </td>
-    <td><input type="submit" name="submit" value="Add marks"></td>
+    <td><input type="submit" name="submit" value="Go"></td>
 	
   </tr>
 	 </form>

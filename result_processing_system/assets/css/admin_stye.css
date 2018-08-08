@@ -96,7 +96,7 @@ table {
 
 td, th {
     border: 1px solid  #EB4960;
-    text-align:center;
+    text-align:left;
     padding: 8px;
 	color:white;
 	
@@ -134,4 +134,13 @@ td input:hover{
 	display:none;
 	
 	}
+td a{
+   color:white;
+   text-decoration:none;	
+	}
+td a:hover{
+   color:#EB4960;
+   	
+	}
+
 
