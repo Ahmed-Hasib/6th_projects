@@ -8,13 +8,22 @@
 body{
 background:#32526E;	
 	}
-
-.header p {
+.header a{
+    float:left;	
+	padding:10px;
+	text-decoration:none;
+	color:#4195ED;
+	}
+.header a:hover{
+   color:white;	
+	}
+.header p{
     text-align: center;
     font-size: 40pt;
     font-weight: bold;
 	float:center;
 	color:#4195ED;
+	float:center;	
 }
 
 .main{

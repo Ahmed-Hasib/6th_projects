@@ -12,11 +12,16 @@ body{
 	float:center;
 	color:#4195ED;
 	}
+
 .header a{
 	float:left;
 	margin:10px;
 	color:#4195ED;
+	text-decoration:none;
 
+	}
+.header a:hover{
+    color:white;	
 	}
 .log_in{
     width:100%;

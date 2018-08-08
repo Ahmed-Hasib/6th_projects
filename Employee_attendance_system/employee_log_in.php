@@ -44,7 +44,7 @@ session_unset();
 </head>
 
 <body>
-<div class="header"><a href="index.php">Home</a><p>Employee Attendance System</p></div>
+<div class="header"><a href="index.php">Back to Home</a><p>Employee Attendance System</p></div>
     <div class="log_in">
        <div class="log_in_container">
               <form action="" method="post">

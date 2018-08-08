@@ -22,7 +22,7 @@ include 'assets/support_files/admin_action.php';
 </head>
 
 <body>
-    <div class="header"><p>Employee Attendance System</p></div>
+    <div class="header"><a href="index.php">Back to Home</a><p>Employee Attendance System</p></div>
   <div class="main">
     <div class="main_container">
     <table>

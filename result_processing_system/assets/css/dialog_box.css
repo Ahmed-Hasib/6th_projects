@@ -1,0 +1,32 @@
+/* CSS Document */
+.dialog_box{
+  width:400px;
+  height:250px;
+  background:#27363B;	
+  margin-top:100px;
+  position:absolute;
+  margin-left:35%;
+  border:1px solid #EB4960;
+  display:none;
+	}
+p{
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:15pt;
+	color:white;
+  text-align:center;	
+	}
+.box_container table {
+		width:70%;
+		background:;
+		}
+.box_container tr td{
+    border:none;
+	text-align:right;	
+	}
+.submit_marks{
+	width:100%;
+	border:1px solid red;
+	}
+
+
