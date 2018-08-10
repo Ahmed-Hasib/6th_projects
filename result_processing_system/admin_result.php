@@ -40,9 +40,9 @@ include 'assets/support_files/admin_result_action.php';
       </div>
       <div class="result"> 
          <div class="form">
-            <form method="post" action="">
+            <form method="post" action="" class="form">
               
-                     <select name="semester">
+                     <select name="semester" class="semester">
                      <option value="0">Chose semester</option>
                      <option value="1">1st semester</option>
                      <option value="2">2nd semester</option>
@@ -53,21 +53,18 @@ include 'assets/support_files/admin_result_action.php';
                      <option value="7">7th semester</option>
                      <option value="8">8th semester</option>
                   </select>
-                 <input type="submit" value="Find" name="submit">
+                 <input type="submit" value="Find" name="submit" class="submit">
                   
                
             </form>
          </div>
-         <table>
-         <tr><td colspan="">Semester No :</td></tr>
-            <tr>
-              <th>Subject Code</th>
-              <th>Credit</th>
-              <th>Earned GPA</th>
-            </tr>
+         <table class="result_show">
+         
             
          </table>
      </div>
  </div>
 </body>
 </html>
+<script src="assets/js/jquery-3.3.1.js"></script>
+<script src="assets/js/admin_result_action.js"></script>

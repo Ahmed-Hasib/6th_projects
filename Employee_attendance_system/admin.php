@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("Asia/Dhaka");
 include 'db.php';
 include 'assets/support_files/admin_action.php';
   $current_date=date("d:m:y");

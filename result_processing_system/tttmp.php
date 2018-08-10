@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<button class="add_mark_btn">a</button>
+<!--<button class="add_mark_btn">a</button>
 
 <button class="add_mark_btn">a</button>
 <button class="add_mark_btn">a</button>
@@ -31,8 +31,10 @@
       </form>
         </table>
    </div>
-</div>
-
+</div>-->
+<form method="post" action="">
+  <button>submit</button>
+</form>
 </body>
 </html>
 <script src="assets/js/jquery-3.3.1.js"></script>

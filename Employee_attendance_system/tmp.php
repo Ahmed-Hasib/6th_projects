@@ -33,10 +33,12 @@ echo date('m')."<br>";
 		echo $late=late_calculation();
 */
 //ays difference ;
+/*
 $date1=date_create("2018-03-12");
 $date2=date_create("2018-3-15");
 $diff=date_diff($date1,$date2);
 echo $diff->format("%R%a days");
-
+*/
+ echo $current_date=date("d:m:y");
 
 ?>
