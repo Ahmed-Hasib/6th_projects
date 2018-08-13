@@ -1,0 +1,73 @@
+/* CSS Document */
+*{
+ margin:0px;
+ padding:0px;	
+	}
+body{
+   background:#27363B;	
+	}
+.header{
+    width:100%;
+	height:70px;
+		
+	}
+.header_container{
+    width:80%;
+	height:70px;
+	margin:auto;
+		
+	}
+.header_container a{
+	float:left;
+	text-decoration:none;
+	color:#EB4960;
+	}
+.header_container p{
+	margin-top:20px;
+    color:#EB4960;
+	text-align:center;
+	font-size:30pt;
+	}
+.login{
+    width:100%;
+	height:auto;
+		
+	}
+.login_container{
+	width:23%;
+	height:auto;
+	margin:auto;
+	background:;
+	margin-top:50px;
+	}
+
+input,select{
+  width:99%;
+  margin-bottom:3px;
+  border:none;
+  height:30px;	
+  background:none;
+  border:1px solid #EB4960;
+  color:white;
+	}
+option{
+   background:#27363B;
+	}
+input[type=submit]
+{
+	width:99.5%;
+	margin:auto;
+	color:white;
+	}
+
+input[type=submit]:hover{
+    background:	#EB4960;
+	color:white;
+	cursor:pointer;
+	}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align:center;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  ctext-align:center;
+}

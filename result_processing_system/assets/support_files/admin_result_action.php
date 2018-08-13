@@ -2,6 +2,12 @@
 function show_this_student($con,$id){
 	$sql="select * from student where `roll`='$id' ";
 	$result=mysqli_query($con,$sql);
+	$row_return=mysqli_num_rows($result);
+	if($row_return==0)
+	{
+		echo "<h1>Roll number is Incorrect</h1>";
+		
+	}
 	while($row=mysqli_fetch_assoc($result))
 	 {
   echo '

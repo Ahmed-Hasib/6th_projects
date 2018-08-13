@@ -18,7 +18,7 @@
  <div class="main">
   <div class="main_container">
        <a href="admin.php">Admin</a>
-       <a>Student</a>
+       <a href="student_login.php">Student</a>
   </div>
  </div>
 </body>

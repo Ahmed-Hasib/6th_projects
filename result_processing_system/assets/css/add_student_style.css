@@ -1,0 +1,78 @@
+/* CSS Document */
+*{
+ margin:0px;
+ padding:0px;	
+	}
+body{
+   background:#27363B;	
+	}
+.header{
+    width:100%;
+	height:70px;
+		
+	}
+.header_container{
+    width:80%;
+	height:70px;
+	margin:auto;
+		
+	}
+.header_container a{
+	float:left;
+	text-decoration:none;
+	color:#EB4960;
+	}
+.header_container p{
+	margin-top:20px;
+    color:#EB4960;
+	text-align:center;
+	font-size:30pt;
+	}
+.main{
+    width:100%;
+	height:auto;
+		
+	}
+.main_container{
+	width:40%;
+	margin:auto;
+	border:1px solid #EB4960;
+	
+	
+	}
+.main_container h2,h3{
+  text-align:center;
+  margin-top:5px;
+  margin-bottom:5px;	
+  color:white;
+	}
+table{
+	
+	margin:auto;
+    width:95%;
+	background:;	
+	margin-top:10px;
+	margin-bottom:10px;
+	color:white;
+	
+	}
+td{
+	padding-bottom:5px;
+	}
+input,select{
+	height:30px;
+    width:100%;
+	border:none;
+	text-align:center;	
+	background:#27363B;	
+	border:1px solid #EB4960;
+	color:white;
+	}
+input[type=submit]:hover{
+	background:#EB4960;
+	cursor:pointer;
+	}
+select,option{
+   background:#27363B;	
+   color:white;
+	}

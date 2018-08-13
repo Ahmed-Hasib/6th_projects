@@ -3,7 +3,7 @@
  padding:0px;	
 	}
 body{
-   background:#C7C4C4;	
+   background:#27363B;	
 	}
 .header{
     width:100%;
@@ -96,4 +96,7 @@ tr:nth-child(even) {
 	}
 .form input:active{
 	color:black;
+	}
+h1{
+   color:white;	
 	}
